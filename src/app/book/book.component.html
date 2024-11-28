@@ -1,0 +1,23 @@
+<div class="book-grid">
+    <div class="book-card" *ngFor="let book of books">
+      <img
+        class="book-card__image"
+        [src]="book.imageUrl"
+        [alt]="book.name"
+        onerror="this.src='assets/images/placeholder.jpg';"
+      />
+  
+      <div class="book-card__badges">
+      </div>
+  
+      <h3 class="book-card__title">{{ book.name }}</h3>
+      <p class="book-card__author">Author: {{ book.author }}</p>
+      <p class="book-card__genre">Genre: {{ book.genre }}</p>
+  
+  
+      <div class="book-card__buttons">
+        <button class="button button--primary">Read</button>
+      </div>
+    </div>
+  </div>
+  

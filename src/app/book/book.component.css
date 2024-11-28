@@ -1,0 +1,124 @@
+
+.book-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .book-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .book-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+ 
+
+  .book-card {
+    background-color: #fff;
+    border: 1px solid  #d0cdcd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+ 
+  .book-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .book-card__badges {
+    margin: 10px 0;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .badge--primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .badge--secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+
+  .book-card__title {
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 5px;
+    color: #333333;
+  }
+
+  .book-card__author {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 5px;
+  }
+
+  .book-card__genre {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 15px;
+  }
+ 
+  .book-card__buttons {
+    margin-top: auto;
+  }
+  
+  .button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button--primary {
+    padding: 8px 20px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000; 
+    font-size: 1.25rem;
+    padding: 0.25rem 1rem;
+    font-weight: bold;
+    text-align: bottom;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+  
+  }
+  
+  .button--primary:hover {
+    background-color: #000 ;
+    color: #fff;
+  }
+  
+  
